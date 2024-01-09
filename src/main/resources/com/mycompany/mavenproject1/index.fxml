@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="773.0" prefWidth="1094.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.mavenproject1.IndexController">
+    <stylesheets>
+        <URL value="@/styles/index.css" />
+    </stylesheets>
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="794.0" prefWidth="91.0" styleClass="v_box_left" stylesheets="@../../../styles/index.css">
+         <children>
+            <ImageView fitHeight="96.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../fontawesome/299092_calendar_icon.png" />
+               </image>
+            </ImageView>
+            <Button mnemonicParsing="false" text="Quản lý">
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fitHeight="82.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../fontawesome/pie-chart-683.png" />
+               </image>
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button mnemonicParsing="false" text="Báo cáo ">
+               <VBox.margin>
+                  <Insets top="13.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="6.0" />
+         </padding></VBox>
+      <HBox layoutX="92.0" prefHeight="104.0" prefWidth="1003.0" styleClass="h_box_top" stylesheets="@../../../styles/index.css">
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="51.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../fontawesome/settings-3110.png" />
+                     </image>
+                  </ImageView>
+                  <Button mnemonicParsing="false" text="Tùy chỉnh">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="60.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../../fontawesome/7124209_menu_icon.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button mnemonicParsing="false" text="Đặt phòng">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <VBox layoutX="92.0" layoutY="104.0" prefHeight="381.0" prefWidth="653.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="653.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin khách hàng">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="54.0" prefWidth="653.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="62.0" prefWidth="240.0" text="Nhận phòng">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="653.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="98.0" text="Tên">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Check in">
+                     <HBox.margin>
+                        <Insets left="130.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <DatePicker>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </DatePicker>
+               </children>
+            </HBox>
+            <HBox prefHeight="59.0" prefWidth="653.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="653.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="123.0" text="Địa chỉ">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Check out">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="130.0" />
+                           </HBox.margin>
+                        </Text>
+                        <DatePicker>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="59.0" prefWidth="653.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="59.0" prefWidth="653.0">
+                     <children>
+                        <Label prefHeight="27.0" prefWidth="93.0" text="Điện thoại">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                        <TextField>
+                           <HBox.margin>
+                              <Insets left="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="107.0" prefWidth="659.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Thêm" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Sửa" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Xóa" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="760.0" layoutY="414.0" prefHeight="381.0" prefWidth="335.0">
+         <children>
+            <HBox prefHeight="126.0" prefWidth="335.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="84.0" prefWidth="326.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thông tin phòng">
+                           <font>
+                              <Font name="System Bold" size="25.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="335.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="98.0" text="Tên phòng">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="88.0" prefWidth="335.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="98.0" text="Giá phòng">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="98.0" text="Loại phòng">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="92.0" layoutY="485.0" prefHeight="309.0" prefWidth="667.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="667.0">
+               <children>
+                  <TextField />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Check in">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Text>
+                  <DatePicker prefHeight="31.0" prefWidth="206.0" />
+                  <Button mnemonicParsing="false" text="Tìm kiếm">
+                     <HBox.margin>
+                        <Insets left="8.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="57.0" prefWidth="667.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" text="Theo tên" />
+                  <CheckBox mnemonicParsing="false" text="Theo phòng">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </CheckBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Check out">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="80.0" />
+                     </HBox.margin>
+                  </Text>
+                  <DatePicker prefHeight="31.0" prefWidth="200.0" />
+               </children>
+            </HBox>
+            <TableView prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="75.0" text="Id" />
+                <TableColumn prefWidth="75.0" text="Trạng thái" />
+                  <TableColumn prefWidth="75.0" text="Tên " />
+                  <TableColumn prefWidth="75.0" text="Tên phòng" />
+                  <TableColumn prefWidth="75.0" text="Check in " />
+                  <TableColumn prefWidth="75.0" text="Checkout" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </VBox>
+      <ImageView fitHeight="213.0" fitWidth="230.0" layoutX="812.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../fontawesome/hotel.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.v_box_left {
+    -fx-background-color:red;
+    
+}
+.h_box_top {
+    -fx-background-color:blue;
+    
+}

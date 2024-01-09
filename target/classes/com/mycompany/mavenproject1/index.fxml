@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="773.0" prefWidth="1094.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.mycompany.mavenproject1.IndexController">
+    <stylesheets>
+        <URL value="@/styles/index.css" />
+    </stylesheets>
+   <children>
+      <VBox layoutX="-7.0" layoutY="3.0" prefHeight="767.0" prefWidth="78.0" />
+   </children>
+</AnchorPane>
